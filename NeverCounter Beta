@@ -1,0 +1,257 @@
+-- GUI to Lua 
+-- Version: 0.0.3
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame_1 = Instance.new("Frame")
+local MarkText_1 = Instance.new("TextLabel")
+local TextLabel_1 = Instance.new("TextLabel")
+local Close_1 = Instance.new("TextButton")
+local Combat_1 = Instance.new("TextButton")
+local CombatFrame_1 = Instance.new("Frame")
+local UICorner_1 = Instance.new("UICorner")
+local Aimbot_1 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Visual_1 = Instance.new("TextButton")
+local VisualFrame_1 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local WallHack_1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Hvh_1 = Instance.new("TextButton")
+local HvhFrame_1 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local SpinBot_1 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Bhop_1 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Open_1 = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+
+-- Properties:
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+MainFrame_1.Name = "MainFrame"
+MainFrame_1.Parent = ScreenGui
+MainFrame_1.BackgroundColor3 = Color3.fromRGB(48,48,48)
+MainFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+MainFrame_1.BorderSizePixel = 0
+MainFrame_1.Position = UDim2.new(0.186427459, 0,0.198547214, 0)
+MainFrame_1.Size = UDim2.new(0, 828,0, 498)
+
+MarkText_1.Name = "MarkText"
+MarkText_1.Parent = MainFrame_1
+MarkText_1.BackgroundColor3 = Color3.fromRGB(25,33,144)
+MarkText_1.BorderColor3 = Color3.fromRGB(0,0,0)
+MarkText_1.BorderSizePixel = 0
+MarkText_1.Size = UDim2.new(0, 828,0, 26)
+MarkText_1.Font = Enum.Font.Arcade
+MarkText_1.Text = " NeverCounter"
+MarkText_1.TextColor3 = Color3.fromRGB(75,160,186)
+MarkText_1.TextScaled = true
+MarkText_1.TextSize = 14
+MarkText_1.TextWrapped = true
+MarkText_1.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_1.Parent = MarkText_1
+TextLabel_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextLabel_1.BackgroundTransparency = 1
+TextLabel_1.BorderColor3 = Color3.fromRGB(0,0,0)
+TextLabel_1.BorderSizePixel = 0
+TextLabel_1.Position = UDim2.new(0.722222209, 0,0, 0)
+TextLabel_1.Size = UDim2.new(0, 200,0, 26)
+TextLabel_1.Font = Enum.Font.SourceSans
+TextLabel_1.Text = "Made By Dynch1ka"
+TextLabel_1.TextScaled = true
+TextLabel_1.TextSize = 14
+TextLabel_1.TextWrapped = true
+
+Close_1.Name = "Close"
+Close_1.Parent = MainFrame_1
+Close_1.Active = true
+Close_1.BackgroundColor3 = Color3.fromRGB(154,62,39)
+Close_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Close_1.BorderSizePixel = 0
+Close_1.Position = UDim2.new(0.963768125, 0,0, 0)
+Close_1.Size = UDim2.new(0, 30,0, 26)
+Close_1.Font = Enum.Font.Arcade
+Close_1.Text = "X"
+Close_1.TextScaled = true
+Close_1.TextSize = 14
+Close_1.TextWrapped = true
+Close_1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.Visible = false
+end)
+
+Combat_1.Name = "Combat"
+Combat_1.Parent = MainFrame_1
+Combat_1.Active = true
+Combat_1.BackgroundColor3 = Color3.fromRGB(76,76,76)
+Combat_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Combat_1.BorderSizePixel = 0
+Combat_1.Position = UDim2.new(0, 0,0.0522088371, 0)
+Combat_1.Size = UDim2.new(0, 101,0, 27)
+Combat_1.Font = Enum.Font.Oswald
+Combat_1.Text = "Combat"
+Combat_1.TextScaled = true
+Combat_1.TextSize = 14
+Combat_1.TextWrapped = true
+Combat_1.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.CombatFrame.Visible = true
+end)
+
+CombatFrame_1.Name = "CombatFrame"
+CombatFrame_1.Parent = MainFrame_1
+CombatFrame_1.Active = true
+CombatFrame_1.BackgroundColor3 = Color3.fromRGB(68,68,68)
+CombatFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+CombatFrame_1.BorderSizePixel = 0
+CombatFrame_1.Position = UDim2.new(0.00845410582, 0,0.118473895, 0)
+CombatFrame_1.Size = UDim2.new(0, 815,0, 433)
+CombatFrame_1.Visible = false
+
+UICorner_1.Parent = CombatFrame_1
+
+Aimbot_1.Name = "Aimbot"
+Aimbot_1.Parent = CombatFrame_1
+Aimbot_1.Active = true
+Aimbot_1.BackgroundColor3 = Color3.fromRGB(59,59,59)
+Aimbot_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Aimbot_1.BorderSizePixel = 0
+Aimbot_1.Position = UDim2.new(0.00981595088, 0,0.02078522, 0)
+Aimbot_1.Size = UDim2.new(0, 154,0, 43)
+Aimbot_1.Font = Enum.Font.SourceSans
+Aimbot_1.Text = "AimBot"
+Aimbot_1.TextSize = 14
+Aimbot_1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptMaker425/NeverCounter/refs/heads/main/AimBot"))()
+end)
+
+UICorner_2.Parent = Aimbot_1
+
+Visual_1.Name = "Visual"
+Visual_1.Parent = MainFrame_1
+Visual_1.Active = true
+Visual_1.BackgroundColor3 = Color3.fromRGB(76,76,76)
+Visual_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Visual_1.BorderSizePixel = 0
+Visual_1.Position = UDim2.new(0.129227057, 0,0.0522088371, 0)
+Visual_1.Size = UDim2.new(0, 101,0, 27)
+Visual_1.Font = Enum.Font.Oswald
+Visual_1.Text = "Visual"
+Visual_1.TextScaled = true
+Visual_1.TextSize = 14
+Visual_1.TextWrapped = true
+Visual_1.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.VisualFrame.Visible = true
+end)
+
+VisualFrame_1.Name = "VisualFrame"
+VisualFrame_1.Parent = MainFrame_1
+VisualFrame_1.Active = true
+VisualFrame_1.BackgroundColor3 = Color3.fromRGB(68,68,68)
+VisualFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+VisualFrame_1.BorderSizePixel = 0
+VisualFrame_1.Position = UDim2.new(0.00845410582, 0,0.118473895, 0)
+VisualFrame_1.Size = UDim2.new(0, 815,0, 433)
+VisualFrame_1.Visible = false
+
+UICorner_3.Parent = VisualFrame_1
+
+WallHack_1.Name = "WallHack"
+WallHack_1.Parent = VisualFrame_1
+WallHack_1.Active = true
+WallHack_1.BackgroundColor3 = Color3.fromRGB(59,59,59)
+WallHack_1.BorderColor3 = Color3.fromRGB(0,0,0)
+WallHack_1.BorderSizePixel = 0
+WallHack_1.Position = UDim2.new(0.00981595088, 0,0.02078522, 0)
+WallHack_1.Size = UDim2.new(0, 154,0, 43)
+WallHack_1.Font = Enum.Font.SourceSans
+WallHack_1.Text = "WallHack"
+WallHack_1.TextSize = 14
+WallHack_1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptMaker425/NeverCounter/refs/heads/main/Wallhack"))()
+end)
+
+UICorner_4.Parent = WallHack_1
+
+Hvh_1.Name = "Hvh"
+Hvh_1.Parent = MainFrame_1
+Hvh_1.Active = true
+Hvh_1.BackgroundColor3 = Color3.fromRGB(76,76,76)
+Hvh_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Hvh_1.BorderSizePixel = 0
+Hvh_1.Position = UDim2.new(0.259661824, 0,0.0522088371, 0)
+Hvh_1.Size = UDim2.new(0, 101,0, 27)
+Hvh_1.Font = Enum.Font.Oswald
+Hvh_1.Text = "Hvh"
+Hvh_1.TextScaled = true
+Hvh_1.TextSize = 14
+Hvh_1.TextWrapped = true
+Hvh_1.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.HvhFrame.Visible = true
+end)
+
+HvhFrame_1.Name = "HvhFrame"
+HvhFrame_1.Parent = MainFrame_1
+HvhFrame_1.Active = true
+HvhFrame_1.BackgroundColor3 = Color3.fromRGB(68,68,68)
+HvhFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+HvhFrame_1.BorderSizePixel = 0
+HvhFrame_1.Position = UDim2.new(0.00845410582, 0,0.118473895, 0)
+HvhFrame_1.Size = UDim2.new(0, 815,0, 433)
+HvhFrame_1.Visible = false
+
+UICorner_5.Parent = HvhFrame_1
+
+SpinBot_1.Name = "SpinBot"
+SpinBot_1.Parent = HvhFrame_1
+SpinBot_1.Active = true
+SpinBot_1.BackgroundColor3 = Color3.fromRGB(59,59,59)
+SpinBot_1.BorderColor3 = Color3.fromRGB(0,0,0)
+SpinBot_1.BorderSizePixel = 0
+SpinBot_1.Position = UDim2.new(0.00981595088, 0,0.02078522, 0)
+SpinBot_1.Size = UDim2.new(0, 154,0, 43)
+SpinBot_1.Font = Enum.Font.SourceSans
+SpinBot_1.Text = "SpinBot"
+SpinBot_1.TextSize = 14
+SpinBot_1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptMaker425/NeverCounter/refs/heads/main/SpinBot"))()
+end)
+
+UICorner_6.Parent = SpinBot_1
+
+Bhop_1.Name = "Bhop"
+Bhop_1.Parent = HvhFrame_1
+Bhop_1.Active = true
+Bhop_1.BackgroundColor3 = Color3.fromRGB(59,59,59)
+Bhop_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Bhop_1.BorderSizePixel = 0
+Bhop_1.Position = UDim2.new(0.00981595088, 0,0.154734418, 0)
+Bhop_1.Size = UDim2.new(0, 154,0, 43)
+Bhop_1.Font = Enum.Font.SourceSans
+Bhop_1.Text = "Bhop"
+Bhop_1.TextSize = 14
+Bhop_1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptMaker425/NeverCounter/refs/heads/main/Bhop"))()
+end)
+
+UICorner_7.Parent = Bhop_1
+
+Open_1.Name = "Open"
+Open_1.Parent = ScreenGui
+Open_1.Active = true
+Open_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Open_1.BackgroundTransparency = 0.8999999761581421
+Open_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Open_1.BorderSizePixel = 0
+Open_1.Position = UDim2.new(0.958893895, 0,0.926616907, 0)
+Open_1.Size = UDim2.new(0, 48,0, 52)
+Open_1.Image = "http://www.roblox.com/asset/?id=112406913531488"
+Open_1.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.Visible = true
+end)
+
+UICorner_8.Parent = Open_1
