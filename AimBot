@@ -296,3 +296,5 @@ FunctionsSection:AddButton({
         setclipboard("NeverCounter On GitHub")
     end
 })
+
+game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.CombatFrame.Visible = false
