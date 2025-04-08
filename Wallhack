@@ -13,3 +13,5 @@ Esp.NamesColor = Color3.fromRGB(255,255,255)
 Esp.NamesOutline = true
 Esp.NamesFont = 2
 Esp.NamesSize = 13
+
+game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.VisualFrame.Visible = false
