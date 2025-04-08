@@ -29,3 +29,5 @@ space = UserInputService:IsKeyDown(Enum.KeyCode.Space)
 	end
 	end
 	end
+
+game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.HvhFrame.Visible = false
