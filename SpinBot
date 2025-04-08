@@ -119,3 +119,5 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		character.HumanoidRootPart.CFrame = character.HumanoidRootPart.CFrame * CFrame.Angles(0, math.rad(spinSpeed), 0)
 	end
 end)
+
+game.Players.LocalPlayer.PlayerGui.ScreenGui.MainFrame.HvhFrame.Visible = false
